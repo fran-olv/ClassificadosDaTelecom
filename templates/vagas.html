@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vagas de Estágio</title>
+</head>
+<body>
+    <h1>Vagas de Estágio</h1>
+    <ul>
+        {% for vaga in vagas %}
+        <li>
+            <h2>{{ vaga.titulo }}</h2>
+            <p>{{ vaga.empresa }}</p>
+            <p>{{ vaga.descricao }}</p>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
+
