@@ -1,6 +1,21 @@
-# ClassificadosDaTelecom
-Objetivo desse portal é ter num único lugar as vagas abertas de Estágio para o curso de Engenharia de Telecomunicações. As vagas aqui compiladas foram extraidas de portais de vagas.
+Trabalho Final da Disciplina de Aplicações em Redes. 
+Curso de Engenharia de Telecomunicações da Universidade Federal Fluminense (UFF)
 
-Webscrabing para ser a base com as vagas. 
-Flask para interface web
+
+# Proposta
+Uma aplicação em redes que faz uma busca em sites de vagas e  Compila o resultado dessas buscas um lugar só​.
+
+# Funcionamento​
+
+- Coleta de vagas, através da busca  em portais de vagas por oportunidades de estágios na área de telecom. ​
+- Exemplos de portais de vagas: Google vagas​, Indeed.com​, Linkedin​
+- Apresentação das Vagas em uma aplicação Web​
+
+  # Tecnologias​
+
+  - WebScrapping ou API's​
+  - Python​
+  - Selenium​
+  - Django
+
 
