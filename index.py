@@ -1,5 +1,5 @@
-from flask import Flask, render_template
-#from webscrapping_linkedin import scrape_linkedin
+import os
+from flask import Flask, render_template, request, json
 
 app = Flask(__name__)
 
@@ -8,21 +8,18 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
+@app.route('/vagas')
+def vagas():
 
-#@app.route("/vagas")
-#def vagas():
-    # Chama as funções de web scraping para obter os dados das vagas
-#    resultados_linkedin = scrape_linkedin()
-    #resultados_indeed = scrape_indeed()
-    #resultados_google = scrape_google_vagas()
+    json_file = os.path.join(os.path.dirname(__file__),  'jobs.json')
 
-    # Concatena os resultados das três fontes de vagas
-#    resultados_totais = resultados_linkedin + resultados_indeed + resultados_google
+    # Lê o arquivo JSON
+    with open(json_file, 'r') as file:
+        data = json.load(file)
 
-    # Renderiza o template HTML com os dados
-#    return render_template("vagas.html", vagas=resultados_totais)
+    # Retorne a página HTML renderizada com as informações do JSON
+    return render_template('vagas.html', data=data)
 
-if __name__ == '__main__':
+
+if __name__ == '__ main__':
     app.run()
-
-
