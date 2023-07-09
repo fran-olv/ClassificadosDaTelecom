@@ -33,7 +33,7 @@ def remover_vagas_duplicadas(vagas):
 def realizar_scraping():
     scripts_scraper = [
         {"script": "linkedin_scraper.py", "output_file": "vagas_linkedin.json"},
-        # {"script": "vagaspontocom_scraper.py", "output_file": "vagas_vagaspontocom.json"},
+        {"script": "vagaspontocom_scraper.py", "output_file": "vagas_vagaspontocom.json"},
         {"script": "infojobs_scraper.py", "output_file": "vagas_infojobs.json"},
         {"script": "googlejobs_scraper.py", "output_file": "vagas_googlejobs.json"}
     ]
