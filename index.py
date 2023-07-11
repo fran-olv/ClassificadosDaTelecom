@@ -30,4 +30,5 @@ if __name__ == '__ main__':
     #ip_publico = requests.get('https://api.ipify.org/').text
     #print(f'IP Publico: {ip_publico}')
     #host='10.1.124.206'
+    #comando: flask run
     app.run(host='0.0.0.0')
